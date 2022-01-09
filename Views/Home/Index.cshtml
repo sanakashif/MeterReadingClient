@@ -1,0 +1,373 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@*<label>Result: @ViewBag.Result</label>*@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ec342b">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+        window.csrfToken = 'f9yVYfXaG0w2s3N0LmeznqXxchLNdX_6forxVwQkDAdmpQwJKtEG4Taz_BTDlFR1QIEiLkwgwOzJgyNhpDQMjUbhvDxeczRRLt10VlODR60=';
+    </script>
+
+    <title>ENSEK | Technology</title>
+    <meta name="generator" content="SEOmatic">
+    <meta name="keywords" content="ENSEK,Ignition,Ignition platform">
+    <meta name="description" content="ENSEK’s leading cloud native SaaS platform Ignition - enabling digital transformation and accelerating the energy transition.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="all">
+    <meta content="en_GB" property="og:locale">
+    <meta content="ENSEK" property="og:site_name">
+    <meta content="website" property="og:type">
+    <meta content="https://ensek.com/technology" property="og:url">
+    <meta content="Technology" property="og:title">
+    <meta content="ENSEK’s leading cloud native SaaS platform Ignition - enabling digital transformation and accelerating the energy transition." property="og:description">
+    <meta content="ENSEK Ignition Platform" property="og:image:alt">
+    <link href="https://ensek.com/technology" rel="canonical">
+    <link href="https://ensek.com" rel="home">
+    <link type="text/plain" href="https://ensek.com/humans.txt" rel="author">
+    <link href="~/Content/css/site.css" rel="stylesheet">
+    <script src="/js/site.js?v=1639589264" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="font-sans antialiased text-blue-600">
+    <div class="relative flex flex-col min-h-screen overflow-x-hidden">
+
+
+
+        <div x-data="{ open: false }"
+             x-init="$watch('open', value => open ? document.body.classList.add('overflow-hidden') : document.body.classList.remove('overflow-hidden'))">
+            <header class="container relative z-40 ">
+                <div class="flex items-center col-span-1 lg:col-span-3">
+                    <a class="text-blue" title="Link to home page" href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="119.006" height="39.787" viewBox="0 0 119.006 39.787"><g transform="translate(-107.125 -43.147)"><path d="M145.137,58.422l-9.373-14.511H107.125v26.9H135.8V56.442l9.338,14.372h7.221v-26.9h-7.221Zm-31,6.04V60.608h10.8V54.186h-10.8V50.333h14.476V64.462Z" fill="currentColor" /><path d="M176.4,59.343a5.771,5.771,0,0,0-1.318-1.854,9.135,9.135,0,0,0-1.892-1.352,14.233,14.233,0,0,0-2.257-.97q-1.2-.4-2.378-.711-1.215-.312-2.326-.537t-2.048-.468a9.622,9.622,0,0,1-1.579-.537,2.009,2.009,0,0,1-.886-.676,1.593,1.593,0,0,1-.208-.832,1.662,1.662,0,0,1,.313-1.057,1.988,1.988,0,0,1,.8-.606,3.472,3.472,0,0,1,1.059-.261c.382-.034.746-.052,1.093-.052a12.95,12.95,0,0,1,4.079.625,32.4,32.4,0,0,1,3.9,1.6q.834-1.458,1.649-2.869t1.684-2.878a17.221,17.221,0,0,0-4.964-2.112,21.82,21.82,0,0,0-5.277-.646,22.258,22.258,0,0,0-3.263.243,13.843,13.843,0,0,0-3.107.835,9.565,9.565,0,0,0-2.69,1.634,7.941,7.941,0,0,0-1.979,2.642,7.609,7.609,0,0,0-.573,1.687,8.334,8.334,0,0,0-.19,1.755,7.9,7.9,0,0,0,.885,4.016,6.782,6.782,0,0,0,2.378,2.417,9.437,9.437,0,0,0,1.579.782q.851.332,1.788.608.9.279,1.875.487t1.978.452q.764.174,1.527.314a8.475,8.475,0,0,1,1.494.416,5.11,5.11,0,0,1,.659.279,4.741,4.741,0,0,1,.659.4,2.221,2.221,0,0,1,.521.521,1.149,1.149,0,0,1,.209.678,1.869,1.869,0,0,1-.365,1.234,2.176,2.176,0,0,1-.92.644,4.44,4.44,0,0,1-1.233.26q-.677.053-1.266.052a15.476,15.476,0,0,1-4.01-.5,19.8,19.8,0,0,1-3.766-1.439,6.077,6.077,0,0,0-.868-.418q-.208.384-.729,1.25t-1.111,1.835q-.277.485-.556.951t-.485.828c-.139.242-.256.443-.348.6a1.278,1.278,0,0,0-.139.276c0,.046.093.127.278.242a1.214,1.214,0,0,0,.348.138,26.56,26.56,0,0,0,5.085,1.778,22.9,22.9,0,0,0,5.364.639,24.232,24.232,0,0,0,4.373-.4,12.344,12.344,0,0,0,3.923-1.386,7.494,7.494,0,0,0,3.888-7.018,12.245,12.245,0,0,0-.139-1.82A6.037,6.037,0,0,0,176.4,59.343Z" fill="currentColor" /><path d="M178.59,70.849h21.488V64.462H185.6V60.608h10.2V54.186H185.6V50.333h14.476V43.911H178.59Z" fill="currentColor" /><path d="M226.131,43.911h-9.1l-7.394,9.06v-9.06h-7.394V70.849h7.394V61.788l7.394,9.061h8.748l-10.657-14.2Z" fill="currentColor" /><rect width="45.233" height="6.124" transform="translate(107.125 76.81)" fill="#eb6533" /></g></svg>
+
+                    </a>
+                </div>
+
+
+
+
+
+                <div class="hidden lg:block col-span-3 space-x-3 text-right">
+
+                    <a href="/contact" class="transition inline-block px-4 py-3 text-base font-bold rounded-full text-white bg-gradient-to-r from-orange-700 to-orange">Get In Touch</a>
+
+                </div>
+            </header>
+
+
+
+        </div>
+
+        <svg class="absolute z-[12] top-0 -right-64 md:right-0 mix-blend-multiply" width="539" height="836" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 539 836">
+            <defs>
+                <style>
+                    .hero-skew-grey1 {
+                        isolation: isolate;
+                    }
+
+                    .hero-skew-grey2 {
+                        mix-blend-mode: multiply;
+                        fill: url(#linear-gradient);
+                    }
+                </style>
+                <linearGradient id="linear-gradient" y1="418" x2="539" y2="418" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#f0f3f7" />
+                    <stop offset="0.45" stop-color="#f0f3f7" stop-opacity="0.78" />
+                    <stop offset="0.54" stop-color="#f0f3f7" stop-opacity="0.77" />
+                    <stop offset="1" stop-color="#f0f3f7" stop-opacity="0.7" />
+                </linearGradient>
+            </defs>
+
+            <g class="hero-skew-grey1"><g id="Layer_2" data-name="Layer 2"><g id="Layer_14" data-name="Layer 14"><polygon class="hero-skew-grey2" points="539 836 539 836 0 0 539 0 539 662.84 539 836" /></g></g></g>
+        </svg>
+
+
+        <main id="app" role="main" class="flex-1">
+
+
+            <div class="-mt-header pt-header bg-gradient-to-b from-white to-grey-200">
+                <div class="lg:min-h-[60vh] pb-16 lg:pb-24 flex items-center ">
+                    <div class="container relative z-[15]">
+                        <div class="">
+                            <div class="order-2 lg:order-1 xl:pr-8 flex flex-col justify-center">
+                                <p class="mt-4 mb-4 text-orange h5">
+                                    Technology</h2>
+
+                                    <h2 class="mt-4 mb-10 h1 text-blue">Flexible and scalable software, accessible from anywhere and at any time</h2>
+                                    <div style="border:solid 1px #808080; padding:20px; width:100%;">
+                                        <h2>Meter Reading Application</h2><br />
+                                        <label>Please enter CSV file location: </label>
+                                        <input type="text" id="txtFilePath" style="width:1000px;" />
+                                        <br />
+                                        <input type="button" style="background-color:#eb6533;margin:20px 0px 0px 0px; padding: 5px 10px 5px 10px;" value="Upload Meter Readings" onclick="var a=$('#txtFilePath').val();location.href='@Url.Action("UploadMeterReadings","Home")?path='+a" />
+                                    </div>
+                            </div>
+
+                            <div class="order-1 hidden lg:block lg:order-2">
+                                <figure class="w-full">
+
+
+
+                                    <picture class="">
+
+                                        <img src="https://ensek.com/uploads/_200x152_crop_center-center_line/ENSEK_Technology-Cloud.png"
+                                             srcset="https://ensek.com/uploads/_200x152_crop_center-center_line/ENSEK_Technology-Cloud.png 200w, https://ensek.com/uploads/_400x304_crop_center-center_line/ENSEK_Technology-Cloud.png 400w, https://ensek.com/uploads/_640x486_crop_center-center_line/ENSEK_Technology-Cloud.png 640w, https://ensek.com/uploads/_768x584_crop_center-center_line/ENSEK_Technology-Cloud.png 768w, https://ensek.com/uploads/_1140x867_crop_center-center_line/ENSEK_Technology-Cloud.png 1140w"
+                                             sizes="100vw"
+                                             loading="lazy"
+                                             class="w-full h-full" />
+                                    </picture>
+
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative py-skew-md w-full h-[10vh] mt-[-10vh] overflow-hidden">
+                    <div class="overflow-hidden bg-skew top-0">
+                        <div class="bg-skew-inlay bg-white"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <section class="container">
+                <div class="bg-gradient-to-r from-orange-700 to-orange rounded-xl p-12 text-white my-20 md:my-32">
+                    <h3 class="text-white" data-animate="fade">
+                        Product Features</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 border-t border-b my-12 pt-12 pb-16 border-opacity-40">
+                            <div class="col-span-1 flex justify-between">
+                                <div class="flex-shrink-0 mr-6 mt-1">
+                                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                        <defs>
+                                            <style>
+                                                .tick-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2"><g id="Layer_14" data-name="Layer 14"><path class="tick-1" d="M25.26,3.55a1,1,0,0,0-1.39,0L12.12,15.28,7.87,10.67a1,1,0,0,0-1.38-.06A1,1,0,0,0,6.43,12l4.93,5.35a1,1,0,0,0,.7.32h0a1,1,0,0,0,.69-.28L25.25,4.94A1,1,0,0,0,25.26,3.55Z" /><path class="tick-1" d="M25,12a1,1,0,0,0-1,1A11,11,0,1,1,13,2a1,1,0,1,0,0-2A13,13,0,1,0,26,13,1,1,0,0,0,25,12Z" /></g></g>
+                                    </svg>
+
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="text-xl mb-1 text-white">Flexible</h4>
+                                    <div class="rte text-lg">A rich set of RESTful APIs support third party integrations, enabling energy suppliers to remain in the driving seat of their tech strategy.</div>
+                                </div>
+                            </div>
+                            <div class="col-span-1 flex justify-between">
+                                <div class="flex-shrink-0 mr-6 mt-1">
+                                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                        <defs>
+                                            <style>
+                                                .tick-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2"><g id="Layer_14" data-name="Layer 14"><path class="tick-1" d="M25.26,3.55a1,1,0,0,0-1.39,0L12.12,15.28,7.87,10.67a1,1,0,0,0-1.38-.06A1,1,0,0,0,6.43,12l4.93,5.35a1,1,0,0,0,.7.32h0a1,1,0,0,0,.69-.28L25.25,4.94A1,1,0,0,0,25.26,3.55Z" /><path class="tick-1" d="M25,12a1,1,0,0,0-1,1A11,11,0,1,1,13,2a1,1,0,1,0,0-2A13,13,0,1,0,26,13,1,1,0,0,0,25,12Z" /></g></g>
+                                    </svg>
+
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="text-xl mb-1 text-white">Low-cost</h4>
+                                    <div class="rte text-lg">World class scalability and resiliency at a far lower price point than legacy on-premise systems. Digital transformation and innovation that aims to reduce cost to serve.</div>
+                                </div>
+                            </div>
+                            <div class="col-span-1 flex justify-between">
+                                <div class="flex-shrink-0 mr-6 mt-1">
+                                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                        <defs>
+                                            <style>
+                                                .tick-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2"><g id="Layer_14" data-name="Layer 14"><path class="tick-1" d="M25.26,3.55a1,1,0,0,0-1.39,0L12.12,15.28,7.87,10.67a1,1,0,0,0-1.38-.06A1,1,0,0,0,6.43,12l4.93,5.35a1,1,0,0,0,.7.32h0a1,1,0,0,0,.69-.28L25.25,4.94A1,1,0,0,0,25.26,3.55Z" /><path class="tick-1" d="M25,12a1,1,0,0,0-1,1A11,11,0,1,1,13,2a1,1,0,1,0,0-2A13,13,0,1,0,26,13,1,1,0,0,0,25,12Z" /></g></g>
+                                    </svg>
+
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="text-xl mb-1 text-white">Scalable</h4>
+                                    <div class="rte text-lg">Enterprise grade scalability through the power of cloud technology.</div>
+                                </div>
+                            </div>
+                            <div class="col-span-1 flex justify-between">
+                                <div class="flex-shrink-0 mr-6 mt-1">
+                                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                        <defs>
+                                            <style>
+                                                .tick-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2"><g id="Layer_14" data-name="Layer 14"><path class="tick-1" d="M25.26,3.55a1,1,0,0,0-1.39,0L12.12,15.28,7.87,10.67a1,1,0,0,0-1.38-.06A1,1,0,0,0,6.43,12l4.93,5.35a1,1,0,0,0,.7.32h0a1,1,0,0,0,.69-.28L25.25,4.94A1,1,0,0,0,25.26,3.55Z" /><path class="tick-1" d="M25,12a1,1,0,0,0-1,1A11,11,0,1,1,13,2a1,1,0,1,0,0-2A13,13,0,1,0,26,13,1,1,0,0,0,25,12Z" /></g></g>
+                                    </svg>
+
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="text-xl mb-1 text-white">Accessible</h4>
+                                    <div class="rte text-lg">Delivered as a web-app, increasing the accessibility for users, whilst flexing around their working needs.</div>
+                                </div>
+                            </div>
+                            <div class="col-span-1 flex justify-between">
+                                <div class="flex-shrink-0 mr-6 mt-1">
+                                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                        <defs>
+                                            <style>
+                                                .tick-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2"><g id="Layer_14" data-name="Layer 14"><path class="tick-1" d="M25.26,3.55a1,1,0,0,0-1.39,0L12.12,15.28,7.87,10.67a1,1,0,0,0-1.38-.06A1,1,0,0,0,6.43,12l4.93,5.35a1,1,0,0,0,.7.32h0a1,1,0,0,0,.69-.28L25.25,4.94A1,1,0,0,0,25.26,3.55Z" /><path class="tick-1" d="M25,12a1,1,0,0,0-1,1A11,11,0,1,1,13,2a1,1,0,1,0,0-2A13,13,0,1,0,26,13,1,1,0,0,0,25,12Z" /></g></g>
+                                    </svg>
+
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="text-xl mb-1 text-white">Resilient</h4>
+                                    <div class="rte text-lg">A distributed and loosely coupled system architecture to maximise resiliency and uptime.</div>
+                                </div>
+                            </div>
+                            <div class="col-span-1 flex justify-between">
+                                <div class="flex-shrink-0 mr-6 mt-1">
+                                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                        <defs>
+                                            <style>
+                                                .tick-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2"><g id="Layer_14" data-name="Layer 14"><path class="tick-1" d="M25.26,3.55a1,1,0,0,0-1.39,0L12.12,15.28,7.87,10.67a1,1,0,0,0-1.38-.06A1,1,0,0,0,6.43,12l4.93,5.35a1,1,0,0,0,.7.32h0a1,1,0,0,0,.69-.28L25.25,4.94A1,1,0,0,0,25.26,3.55Z" /><path class="tick-1" d="M25,12a1,1,0,0,0-1,1A11,11,0,1,1,13,2a1,1,0,1,0,0-2A13,13,0,1,0,26,13,1,1,0,0,0,25,12Z" /></g></g>
+                                    </svg>
+
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="text-xl mb-1 text-white">Real-time</h4>
+                                    <div class="rte text-lg">Event-driven architecture enables real-time processing and eradicates batch processing.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-right" data-animate="fade">
+
+
+
+                            <a href="https://ensek.com/contact" target="" class="inline-flex items-center p-1.5 text-sm font-bold transition-all justify-between rounded-full group bg-grey text-grey-700 hover:bg-grey-700 hover:text-white ">
+                                <span class="px-3 py-2 pr-4">Find out more</span>
+                                <div class="p-2.5 rounded-full transition-colors bg-white text-grey-700 group-hover:arrow-active">
+                                    <div class="arrow">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                </div>
+            </section>
+
+
+            <section class="relative -mb-skew-lg lg:-mb-skew-xl pb-skew-xl">
+                <div class="overflow-hidden bg-skew">
+                    <div class="bg-skew-inlay bg-grey-200"></div>
+                </div>
+
+
+            </section>
+
+
+
+
+
+        </main>
+
+
+
+
+
+    </div>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2557243.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <!-- Hotjar Tracking Code for www.ensek.co.uk -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1263445, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37212384-1"></script>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/jqueryui")
+        @Styles.Render("~/Content/cssjqryUi")
+        <script>
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-37212384-1');
+
+        function UploadMeterReadings() {
+        $.ajax({
+        type:'POST',
+        url: '@Url.Action("UploadMeterReadings", "Home")',
+            data: {
+                path: 'Sana'
+              },
+        contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                if (data == "success") {
+                    alert("Meter readings uploaded on server.");
+                }
+                    else {
+                          alert("Something went wrong. Please contact administrator.");
+                    }
+               }
+    });
+        }
+        </script>
+        }
+    </body>
+</html>
